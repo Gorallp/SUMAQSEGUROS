@@ -1,0 +1,125 @@
+/* Fondo general */
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #f3f4f6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Contenedor principal */
+.login-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+/* Tarjeta blanca */
+.login-card {
+  background: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  text-align: center;
+  width: 360px;
+}
+
+/* Logo y título */
+.logo img {
+  width: 50px;
+  margin-bottom: 10px;
+}
+
+.logo h2 {
+  color: #065f46;
+  font-weight: 700;
+  margin-bottom: 5px;
+}
+
+/* Subtítulo */
+h3 {
+  color: #222;
+  margin-bottom: 0.3rem;
+}
+
+p {
+  color: #555;
+  font-size: 0.9rem;
+}
+
+/* Campos del formulario */
+.input-group {
+  text-align: left;
+  margin-top: 1rem;
+}
+
+.input-group label {
+  font-size: 0.85rem;
+  color: #333;
+  display: block;
+  margin-bottom: 5px;
+}
+
+.input-group input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  outline: none;
+  transition: border-color 0.3s;
+}
+
+.input-group input:focus {
+  border-color: #0d9488;
+}
+
+/* Opciones inferiores */
+.options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+  font-size: 0.85rem;
+}
+
+.options a {
+  text-decoration: none;
+  color: #0d9488;
+}
+
+.options a:hover {
+  text-decoration: underline;
+}
+
+/* Botón principal */
+.btn-login {
+  width: 100%;
+  padding: 10px;
+  margin-top: 15px;
+  background-color: #0d9488;
+  color: #fff;
+  font-weight: 600;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-login:hover {
+  background-color: #047857;
+}
+
+/* Registro */
+.register {
+  margin-top: 15px;
+  font-size: 0.85rem;
+}
+
+.register a {
+  text-decoration: none;
+  color: #0d9488;
+  font-weight: bold;
+}

@@ -1,0 +1,131 @@
+.main-content {
+  padding: 30px;
+  background-color: #f9fafb;
+}
+
+.main-content h1 {
+  font-size: 1.8rem;
+  color: #004b3f;
+  margin-bottom: 20px;
+}
+
+.financial-summary,
+.aporte-selector,
+.aporte-visualization {
+  background: #fff;
+  border-radius: 10px;
+  padding: 25px;
+  margin-bottom: 25px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+}
+
+.financial-summary h2,
+.aporte-selector h2,
+.aporte-visualization h2 {
+  color: #004b3f;
+  margin-bottom: 15px;
+}
+
+.summary-cards {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+}
+
+.card {
+  background-color: #f5fdfb;
+  border: 1px solid #d9f2eb;
+  border-radius: 10px;
+  padding: 15px;
+  text-align: center;
+  position: relative;
+}
+
+.card h3 {
+  color: #006b5a;
+  font-size: 1rem;
+  margin-bottom: 10px;
+}
+
+.card .amount {
+  font-size: 1.6rem;
+  color: #004b3f;
+  font-weight: bold;
+}
+
+.card .unit {
+  font-size: 0.9rem;
+  color: #666;
+}
+
+.update-tag {
+  background: #fff3cd;
+  color: #b38700;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  border-radius: 6px;
+  position: absolute;
+  top: 8px;
+  right: 8px;
+}
+
+.selector-box {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 10px;
+}
+
+.selector-box select {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.btn-generate,
+.btn-export {
+  background-color: #007b5e;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn-generate:hover,
+.btn-export:hover {
+  background-color: #005f46;
+}
+
+.charts-container {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.chart-card {
+  background-color: #f8fffd;
+  border: 1px solid #d9f2eb;
+  border-radius: 10px;
+  padding: 20px;
+}
+
+.chart-placeholder {
+  background: #eef5f3;
+  border-radius: 8px;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #888;
+  font-style: italic;
+  margin: 10px 0;
+}
+
+.positive {
+  color: #0c9b45;
+  font-weight: bold;
+}

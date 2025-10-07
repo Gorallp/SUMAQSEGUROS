@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SumaqSeguros - Pensiones</title>
+  <link rel="stylesheet" href="ESTILOS/E1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <h2 class="logo">SumaqSeguros</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="active">Dashboard</a></li>
+          <li><a href="#">Asistencia Virtual</a></li>
+          <li><a href="financiero.html">Panel Financiero</a></li>
+          <li><a href="pensiones.html">Gestión de Pensiones</a></li>
+          <li><a href="seguros.html">Gestión de Seguros</a></li>
+          <li><a href="comparador.html">Comparador</a></li>
+        </ul>
+      </nav>
+
+      <div class="login-section">
+        <h3>Pensionista</h3>
+        <a href="login.html" class="login-btn">Iniciar sesión</a>
+        </div>
+
+
+      <footer>
+        <p>© 2025 SumaqSeguros</p>
+      </footer>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Buscar transacciones, aportes, alertas...">
+        <button class="user-btn">👤 Usuario</button>
+      </header>
+
+
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f6f8f7;
+    margin: 0;
+    padding: 0;
+  }
+
+  .contenido-principal {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .contenido-principal h2 {
+    color: #004d40;
+    margin-bottom: 1rem;
+  }
+
+  /* Resumen administrativo */
+  .resumen-administrativo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: space-between;
+    background-color: #f9fafb;
+    border: 1px solid #e0e0e0;
+    border-radius: 10px;
+    padding: 1.5rem;
+  }
+
+  .bloque-resumen {
+    flex: 1;
+    min-width: 180px;
+  }
+
+  .bloque-resumen h3 {
+    margin: 0;
+    font-size: 1rem;
+    color: #333;
+  }
+
+  .bloque-resumen p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin: 5px 0 0;
+    color: #00796b;
+  }
+
+  .bloque-resumen small {
+    color: #666;
+  }
+
+  .estado-datos {
+    background: #fffbe6;
+    color: #ff9800;
+    padding: 0.4rem 0.8rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    align-self: center;
+  }
+
+  /* Tablas */
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+  }
+
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid #e0e0e0;
+  }
+
+  th {
+    background-color: #00695c;
+    color: white;
+    font-weight: 500;
+  }
+
+  td {
+    color: #333;
+  }
+
+  .acciones-tabla {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 0.5rem;
+  }
+
+  .boton {
+    background-color: #00796b;
+    color: white;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .boton:hover {
+    background-color: #00695c;
+  }
+
+  .boton-secundario {
+    background-color: #e0e0e0;
+    color: #333;
+  }
+
+  /* Secciones */
+  .subseccion {
+    margin-top: 2rem;
+  }
+
+  .subseccion h3 {
+    color: #004d40;
+    margin-bottom: 0.5rem;
+  }
+
+  @media (max-width: 768px) {
+    .resumen-administrativo {
+      flex-direction: column;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+  <div class="contenido-principal">
+    <h2>Gestión de Pensiones</h2>
+
+```
+<!-- Resumen administrativo -->
+<section class="resumen-administrativo">
+  <div class="bloque-resumen">
+    <h3>Estado AFP</h3>
+    <p>Activo</p>
+    <small>Integra</small>
+  </div>
+
+  <div class="bloque-resumen">
+    <h3>Estado ONP</h3>
+    <p>Suspendido</p>
+    <small>Último aporte: 06/2024</small>
+  </div>
+
+  <div class="bloque-resumen">
+    <h3>Años aportados</h3>
+    <p>18</p>
+    <small>ONP + AFP</small>
+  </div>
+
+  <div class="bloque-resumen">
+    <h3>Bonos pendientes</h3>
+    <p>2</p>
+    <small>Asignaciones especiales</small>
+  </div>
+
+  <div class="estado-datos">⚡ Datos actualizados</div>
+</section>
+
+<!-- Tabla de aportes -->
+<section class="subseccion">
+  <h3>Aportes registrados</h3>
+
+  <div class="acciones-tabla">
+    <button class="boton">+ Nuevo aporte</button>
+    <button class="boton boton-secundario">⬇ Exportar</button>
+  </div>
+
+  <table>
+    <thead>
+      <tr>
+        <th>CUSPP</th>
+        <th>Periodo</th>
+        <th>Monto Aporte</th>
+        <th>Trabajador</th>
+        <th>Empleador</th>
+        <th>Comisión</th>
+        <th>Seguro Inv.</th>
+        <th>Fecha</th>
+        <th>Empleador</th>
+        <th>RUC</th>
+        <th>Salario</th>
+        <th>Días</th>
+        <th>Observaciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>12345678</td>
+        <td>2025-08</td>
+        <td>S/ 1,200</td>
+        <td>S/ 500</td>
+        <td>S/ 600</td>
+        <td>S/ 50</td>
+        <td>S/ 50</td>
+        <td>15/08/2025</td>
+        <td>Empresa X</td>
+        <td>20123456789</td>
+        <td>S/ 2,500</td>
+        <td>30</td>
+        <td>Aporte regular</td>
+      </tr>
+      <tr>
+        <td>ONP</td>
+        <td>2025-07</td>
+        <td>S/ 950</td>
+        <td>S/ 400</td>
+        <td>S/ 500</td>
+        <td>S/ 25</td>
+        <td>S/ 25</td>
+        <td>15/07/2025</td>
+        <td>Empresa X</td>
+        <td>20123456789</td>
+        <td>S/ 2,200</td>
+        <td>28</td>
+        <td>Aporte procesando</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+
+<!-- Trámites, apelaciones y bonos -->
+<section class="subseccion">
+  <h3>Trámites, apelaciones y bonos</h3>
+  <table>
+    <thead>
+      <tr>
+        <th>Tipo</th>
+        <th>Detalle</th>
+        <th>Estado</th>
+        <th>Última actualización</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Apelación</td>
+        <td>Revisión cálculo ONP</td>
+        <td>En proceso</td>
+        <td>02/08/2025</td>
+      </tr>
+      <tr>
+        <td>Bono</td>
+        <td>Programa especial AFP</td>
+        <td>Aprobado</td>
+        <td>28/07/2025</td>
+      </tr>
+    </tbody>
+  </table>
+</section>
+```
+
+  </div>
+
+<script>
+// Aquí puedes agregar funciones si deseas actualizar dinámicamente los datos
+// Ejemplo: cambiar contenido al hacer clic en opciones del menú
+</script>
+
+</body>
+</html>

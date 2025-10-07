@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SumaqSeguros - Comparador</title>
+  <link rel="stylesheet" href="ESTILOS/E1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <h2 class="logo">SumaqSeguros</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="#" class="active">Dashboard</a></li>
+          <li><a href="#">Asistencia Virtual</a></li>
+          <li><a href="financiero.html">Panel Financiero</a></li>
+          <li><a href="pensiones.html">Gestión de Pensiones</a></li>
+          <li><a href="seguros.html">Gestión de Seguros</a></li>
+          <li><a href="comparador.html">Comparador</a></li>
+        </ul>
+      </nav>
+
+      <div class="login-section">
+        <h3>Pensionista</h3>
+        <a href="login.html" class="login-btn">Iniciar sesión</a>
+        </div>
+
+
+      <footer>
+        <p>© 2025 SumaqSeguros</p>
+      </footer>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Buscar transacciones, aportes, alertas...">
+        <button class="user-btn">👤 Usuario</button>
+      </header>
+
+
+
+
+
+
+      <!DOCTYPE html>
+
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Comparador de Seguros</title>
+
+<style>
+  body {
+    font-family: "Segoe UI", sans-serif;
+    background-color: #f8f9fa;
+    margin: 0;
+    padding: 0;
+  }
+
+  .comparador-seguros {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 12px;
+    margin: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+  }
+
+  .comparador-seguros h2 {
+    color: #004d40;
+    margin-bottom: 1.5rem;
+  }
+
+  /* Categorías */
+  .categorias {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .boton-categoria {
+    background-color: #e0f2f1;
+    border: 1px solid #00796b;
+    color: #00796b;
+    padding: 0.4rem 1rem;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .boton-categoria.activo {
+    background-color: #00796b;
+    color: #fff;
+  }
+
+  .boton-categoria:hover {
+    background-color: #00695c;
+    color: #fff;
+  }
+
+  /* Tarjetas */
+  .contenedor-planes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  .tarjeta-plan {
+    flex: 1;
+    min-width: 250px;
+    border: 1px solid #b2dfdb;
+    border-radius: 10px;
+    padding: 1rem;
+    background-color: #fefefe;
+    transition: 0.3s;
+  }
+
+  .tarjeta-plan:hover {
+    box-shadow: 0 2px 6px rgba(0,0,0,0.08);
+  }
+
+  .tarjeta-plan h4 {
+    color: #004d40;
+    margin-bottom: 0.5rem;
+  }
+
+  .tarjeta-plan p {
+    margin: 0.3rem 0;
+    color: #333;
+  }
+
+  .boton-comparar {
+    display: block;
+    width: 100%;
+    background-color: #e0f2f1;
+    color: #00796b;
+    border: 1px solid #b2dfdb;
+    border-radius: 6px;
+    padding: 0.5rem;
+    margin-top: 0.8rem;
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: 0.3s;
+  }
+
+  .boton-comparar:hover {
+    background-color: #00796b;
+    color: white;
+  }
+
+  /* Tabla comparativa */
+  .tabla-comparativa {
+    width: 100%;
+    border-collapse: collapse;
+    background-color: #fff;
+    border-radius: 10px;
+    overflow: hidden;
+  }
+
+  .tabla-comparativa th {
+    background-color: #00695c;
+    color: #fff;
+    text-align: left;
+    padding: 0.8rem;
+  }
+
+  .tabla-comparativa td {
+    border-top: 1px solid #e0e0e0;
+    padding: 0.75rem;
+  }
+
+  .tabla-comparativa tr:nth-child(even) {
+    background-color: #f9f9f9;
+  }
+
+  .tabla-comparativa .celda-titulo {
+    font-weight: bold;
+    color: #004d40;
+  }
+
+  .boton-cotizar {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+
+  .boton-cotizar:hover {
+    background-color: #004d40;
+  }
+
+  @media (max-width: 768px) {
+    .contenedor-planes {
+      flex-direction: column;
+    }
+
+    .tabla-comparativa th, .tabla-comparativa td {
+      font-size: 0.9rem;
+    }
+  }
+</style>
+
+</head>
+
+<body>
+
+  <div class="comparador-seguros">
+    <h2>Comparador de Seguros</h2>
+
+```
+<!-- Categorías -->
+<div class="categorias">
+  <button class="boton-categoria activo">Vehicular</button>
+  <button class="boton-categoria">Hogar</button>
+  <button class="boton-categoria">Salud</button>
+  <button class="boton-categoria">Vida</button>
+</div>
+
+<!-- Tarjetas de planes -->
+<div class="contenedor-planes">
+  <div class="tarjeta-plan">
+    <h4>Rímac Seguros</h4>
+    <p><strong>Básico</strong></p>
+    <p>Prima: S/ 2,400</p>
+    <p>Cobertura: S/ 150,000</p>
+    <p>Rating: 4.2/5</p>
+    <button class="boton-comparar" onclick="quitarComparacion('Rímac')">Quitar de comparación</button>
+  </div>
+
+  <div class="tarjeta-plan">
+    <h4>Pacífico Seguros</h4>
+    <p><strong>Premium</strong></p>
+    <p>Prima: S/ 3,600</p>
+    <p>Cobertura: S/ 250,000</p>
+    <p>Rating: 4.7/5</p>
+    <button class="boton-comparar" onclick="quitarComparacion('Pacífico')">Quitar de comparación</button>
+  </div>
+
+  <div class="tarjeta-plan">
+    <h4>Mapfre</h4>
+    <p><strong>Total</strong></p>
+    <p>Prima: S/ 4,200</p>
+    <p>Cobertura: S/ 300,000</p>
+    <p>Rating: 4.5/5</p>
+    <button class="boton-comparar" onclick="agregarComparacion('Mapfre')">Agregar a comparación</button>
+  </div>
+</div>
+
+<!-- Tabla comparativa -->
+<table class="tabla-comparativa">
+  <thead>
+    <tr>
+      <th>Característica</th>
+      <th>Básico</th>
+      <th>Premium</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td class="celda-titulo">Prima anual</td>
+      <td>S/ 2,400</td>
+      <td>S/ 3,600</td>
+    </tr>
+    <tr>
+      <td class="celda-titulo">Cobertura</td>
+      <td>S/ 150,000</td>
+      <td>S/ 250,000</td>
+    </tr>
+    <tr>
+      <td class="celda-titulo">Prima mensual</td>
+      <td>S/ 200</td>
+      <td>S/ 300</td>
+    </tr>
+    <tr>
+      <td class="celda-titulo">Rating</td>
+      <td>4.2/5</td>
+      <td>4.7/5</td>
+    </tr>
+    <tr>
+      <td class="celda-titulo">Acción</td>
+      <td><button class="boton-cotizar" onclick="cotizar('Básico')">Cotizar</button></td>
+      <td><button class="boton-cotizar" onclick="cotizar('Premium')">Cotizar</button></td>
+    </tr>
+  </tbody>
+</table>
+```
+
+  </div>
+
+  <script>
+    // Simulación de funciones dinámicas
+    function quitarComparacion(nombre) {
+      alert(`Has quitado ${nombre} de la comparación.`);
+    }
+
+    function agregarComparacion(nombre) {
+      alert(`Has agregado ${nombre} a la comparación.`);
+    }
+
+    function cotizar(plan) {
+      alert(`Cotización solicitada para el plan ${plan}.`);
+    }
+  </script>
+
+</body>
+</html>

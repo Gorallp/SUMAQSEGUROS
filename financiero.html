@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SumaqSeguros - Financiero</title>
+  <link rel="stylesheet" href="ESTILOS/E1.css">
+  <link rel="stylesheet" href="ESTILOS/E3.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Barra lateral -->
+    <aside class="sidebar">
+      <h2 class="logo">SumaqSeguros</h2>
+      <nav class="menu">
+        <ul>
+          <li><a href="index.html" class="active">Dashboard</a></li>
+          <li><a href="#">Asistencia Virtual</a></li>
+          <li><a href="financiero.html">Panel Financiero</a></li>
+          <li><a href="pensiones.html">Gestión de Pensiones</a></li>
+          <li><a href="seguros.html">Gestión de Seguros</a></li>
+          <li><a href="comparador.html">Comparador</a></li>
+        </ul>
+      </nav>
+
+      <div class="login-section">
+        <h3>Pensionista</h3>
+        <a href="login.html" class="login-btn">Iniciar sesión</a>
+        </div>
+
+
+      <footer>
+        <p>© 2025 SumaqSeguros</p>
+      </footer>
+    </aside>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+      <header class="header">
+        <input type="text" placeholder="Buscar transacciones, aportes, alertas...">
+        <button class="user-btn">👤 Usuario</button>
+      </header>
+
+
+
+
+
+<main class="main-content">
+  <h1>Panel Financiero</h1>
+
+  <section class="financial-summary">
+    <h2>Resumen de estado</h2>
+    <div class="summary-cards">
+      <div class="card">
+        <h3>Monto disponible</h3>
+        <p class="amount">S/ 12,450</p>
+        <span>Cuentas + AFP</span>
+      </div>
+      <div class="card">
+        <h3>Proyección pensión</h3>
+        <p class="amount">S/ 2,380 <span class="unit">/ mes</span></p>
+      </div>
+      <div class="card">
+        <h3>Aportes ONP (12m)</h3>
+        <p class="amount">S/ 9,800</p>
+        <span>Últimos 12 meses</span>
+      </div>
+      <div class="card">
+        <h3>Aportes AFP (12m)</h3>
+        <p class="amount">S/ 14,200</p>
+        <span>Integra</span>
+        <div class="update-tag">⚡ Datos actualizados</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="aporte-selector">
+    <h2>Seleccione un sistema de aportes</h2>
+    <div class="selector-box">
+      <select id="aporteSelect">
+        <option>ONP</option>
+        <option>AFP</option>
+      </select>
+      <button class="btn-generate">Generar</button>
+    </div>
+  </section>
+
+  <section class="aporte-visualization">
+    <h2>Visualización de aportes ONP</h2>
+    <div class="charts-container">
+      <div class="chart-card">
+        <h3>ONP</h3>
+        <p>Últimos años</p>
+        <div class="chart-placeholder">Gráfico anual (placeholder)</div>
+        <p><strong>Total aportado:</strong> S/ 24,000</p>
+      </div>
+      <div class="chart-card">
+        <h3>Comparativo</h3>
+        <p>ONP vs AFP</p>
+        <div class="chart-placeholder">Gráfico comparativo (placeholder)</div>
+        <p><strong>Rentabilidad acumulada:</strong> <span class="positive">+5.2%</span></p>
+      </div>
+    </div>
+    <button class="btn-export">⬇ Exportar</button>
+  </section>
+</main>
+
+
+
+
+      </body>
+</html>
